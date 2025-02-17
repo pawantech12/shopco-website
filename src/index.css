@@ -5,3 +5,7 @@
 body {
   font-family: "Inter", serif;
 }
+
+.slick-slide > div {
+  padding: 0 10px; /* Adjust spacing between slides */
+}

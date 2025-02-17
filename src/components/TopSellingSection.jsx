@@ -1,12 +1,12 @@
 import React from "react";
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 
-const NewArrivalSection = () => {
+const TopSellingSection = () => {
   return (
-    <section className="py-10 px-20 max-md:px-5 border-b border-[#0000001A]">
+    <section className="py-10 px-20 max-md:px-5 ">
       <div>
         <h4 className="text-[48px] font-bold text-center uppercase max-sm:text-[32px]">
-          new arrivals
+          top selling
         </h4>
       </div>
       <div className="flex flex-col w-full">
@@ -45,4 +45,4 @@ const NewArrivalSection = () => {
   );
 };
 
-export default NewArrivalSection;
+export default TopSellingSection;
