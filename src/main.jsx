@@ -6,10 +6,15 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ProductList from "./pages/ProductList.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App element={<Home />} />,
+  },
+  {
+    path: "/products",
+    element: <App element={<ProductList />} />,
   },
 ]);
 
