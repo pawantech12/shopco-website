@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="px-20 py-24 bg-[#F0F0F0] max-md:px-5">
-      <div className="flex justify-between flex-wrap gap-5 max-md: flex-col max-md:items-center max-md:text-center">
+      <div className="flex justify-between flex-wrap gap-5 max-md:flex-col max-md:items-center max-md:text-center">
         <div className="flex flex-col gap-[25px] w-[25%] max-md:w-11/12 max-md:items-center">
           <figure>
             <img src="/shopco.png" alt="logo png image" />
