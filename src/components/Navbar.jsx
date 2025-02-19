@@ -70,17 +70,26 @@ const Navbar = () => {
               }`}
             >
               <li>
-                <Link to={"/"} className="block px-4 py-2 hover:bg-gray-100">
+                <Link
+                  to={"/products"}
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
                   Clothing
                 </Link>
               </li>
               <li>
-                <Link to={"/"} className="block px-4 py-2 hover:bg-gray-100">
+                <Link
+                  to={"/products"}
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
                   Shoes
                 </Link>
               </li>
               <li>
-                <Link to={"/"} className="block px-4 py-2 hover:bg-gray-100">
+                <Link
+                  to={"/products"}
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
                   Accessories
                 </Link>
               </li>
@@ -123,9 +132,11 @@ const Navbar = () => {
             <Search size={24} />
           </button>
 
-          <button>
-            <ShoppingCart size={24} />
-          </button>
+          <Link to={"/cart"}>
+            <button>
+              <ShoppingCart size={24} />
+            </button>
+          </Link>
           <button>
             <CircleUserRound size={24} />
           </button>
