@@ -1,6 +1,6 @@
 import React from "react";
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 const TopSellingSection = () => {
   return (
     <section className="py-10 px-20 max-md:px-5 ">
@@ -21,7 +21,11 @@ const TopSellingSection = () => {
                 />
               </figure>
               <div className="mt-3 flex flex-col gap-1">
-                <h4 className="text-xl font-bold">T-shirt with Tape Details</h4>
+                <Link to={`/product/1`}>
+                  <h4 className="text-xl font-bold">
+                    T-shirt with Tape Details
+                  </h4>
+                </Link>
                 <div className="flex gap-1 items-center">
                   <div className="text-[#FFC633] flex items-center gap-1 text-lg">
                     <FaStar />
