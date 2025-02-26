@@ -12,12 +12,18 @@ const FAQItem = ({ question, answer }) => {
       >
         {question}
         <FaChevronDown
-          className={`transition-transform ${
+          className={`transition-transform duration-300 ease-in-out ${
             isOpen ? "rotate-180" : "rotate-0"
           }`}
         />
       </button>
-      {isOpen && <p className="mt-2 text-gray-600">{answer}</p>}
+      <div
+        className={`transition-all duration-300 ease-in-out overflow-hidden ${
+          isOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <p className="mt-2 text-gray-600">{answer}</p>
+      </div>
     </div>
   );
 };

@@ -56,9 +56,14 @@ const Navbar = () => {
             className="relative flex items-center gap-1 cursor-pointer"
             onClick={() => setShowDropdown(!showDropdown)}
           >
-            <Link>Shop</Link>
+            <Link className="hover:underline underline-offset-2">Shop</Link>
             <button>
-              <ChevronDown size={20} />
+              <ChevronDown
+                size={20}
+                className={`${
+                  showDropdown && "rotate-180"
+                } transition-all ease-in-out duration-300`}
+              />
             </button>
 
             {/* Dropdown Menu */}
@@ -72,7 +77,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/products"}
-                  className="block px-4 py-2 hover:bg-gray-100"
+                  className="block px-4 py-2 hover:bg-gray-100 hover:underline underline-offset-2"
                 >
                   Clothing
                 </Link>
@@ -80,7 +85,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/products"}
-                  className="block px-4 py-2 hover:bg-gray-100"
+                  className="block px-4 py-2 hover:bg-gray-100 hover:underline underline-offset-2"
                 >
                   Shoes
                 </Link>
@@ -88,7 +93,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/products"}
-                  className="block px-4 py-2 hover:bg-gray-100"
+                  className="block px-4 py-2 hover:bg-gray-100 hover:underline underline-offset-2"
                 >
                   Accessories
                 </Link>
@@ -96,13 +101,15 @@ const Navbar = () => {
             </ul>
           </li>
           <li>
-            <Link>On Sale</Link>
+            <Link className="hover:underline underline-offset-2">On Sale</Link>
           </li>
           <li>
-            <Link>New Arrivals</Link>
+            <Link className="hover:underline underline-offset-2">
+              New Arrivals
+            </Link>
           </li>
           <li>
-            <Link>Brands</Link>
+            <Link className="hover:underline underline-offset-2">Brands</Link>
           </li>
         </ul>
 
